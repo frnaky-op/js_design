@@ -1,0 +1,1 @@
+For elder visitor, they're our target audience. Color also design as classical way for them.

@@ -1,0 +1,267 @@
+/*
+theme name: kazan MuseumTour
+template: blankslate
+Author: Franky
+Version: 0.1
+ */
+
+#wrapper {
+    font-family: Arial;
+}
+
+#wpadminbar {
+    position : absolute;
+    top: 0;
+}
+
+nav {
+    position: sticky !important;
+    top: 0;
+
+    z-index: 9999;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+
+    background-color: #6a0730;
+}
+
+#brand a {
+    font-weight: bold;
+    font-size: 2rem;
+
+    color: #f2f2f2;
+}
+
+#brand a:hover {
+    text-decoration: none;
+}
+
+.nav-item a {
+    position: relative;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    color: #f2f2f2;
+}
+
+.nav-item a:before {
+    content: '';
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: 0;
+    height: 2px;
+
+    background-color: #f2f2f2;
+
+    transition: .3s;
+}
+
+.nav-item:hover a:before {
+    width: 100%;
+}
+
+.nav-item.active a {
+    color: #6a0730 !important;
+}
+
+.nav-item.active {
+
+    background-color: #f2f2f2;
+}
+
+.nav-item a:hover {
+    text-decoration: none;
+}
+
+section,
+main,
+footer {
+    padding: 30px 0;
+}
+
+.section-title {
+    position: relative;
+
+    text-align: center;
+
+    margin: 15px 0;
+
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6a0730;
+}
+
+.section-title:before {
+    content: '';
+
+    position: absolute;
+
+    top: 50%;
+    left: 0;
+
+
+    width: 100%;
+    height: 2px;
+
+    transform: translateY(-50%);
+
+    background-color: #ccc;
+}
+
+.section-title > span {
+    position: relative;
+
+    padding: 0 15px;
+    z-index: 1;
+
+    background: white;
+}
+
+.museum img {
+    height: 180px;
+
+    object-fit: cover;
+}
+
+.card.museum {
+    position: relative;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .2);
+
+    transition: .3s;
+}
+
+.card.museum:hover {
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+}
+
+.card.museum:hover:after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.card {
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .2);
+
+    transition: .3s;
+
+    border: 0;
+}
+
+.card:hover {
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+}
+
+.card.museum img {
+    transition: .5s;
+}
+
+.card.museum:hover img {
+    transform: scale(1.1);
+}
+
+.museum-title {
+    z-index: 1;
+
+    display: block;
+
+    position: absolute;
+    bottom: 15px;
+
+    padding: 8px;
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 1rem;
+
+    background-color: #6a0730;
+    color: #f2f2f2 !important;
+
+    text-decoration: none !important;
+}
+
+.event-title {
+    color: #6a0730 !important;
+
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.main-news img {
+    height: 240px;
+}
+
+.news .card-body {
+    position: relative;
+}
+
+.news-date {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    padding: 8px;
+
+    background-color: #6a0730;
+    color: #f2f2f2;
+
+    font-size: .875rem;
+}
+
+#footer {
+    background-color: #414042;
+
+    color: #f2f2f2;
+}
+
+#footer > .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contactSection {
+    color: #f2f2f2;
+
+    background-color: #6a0730;
+}
+
+#contactSection .form-group {
+    flex: 0 0 50%;
+}
+
+#contactSection .form-group label {
+    display: inline-block;
+
+    width: 180px;
+}
+
+#contactSection .form-group input,
+#contactSection .form-group textarea {
+    border: 0;
+    border-radius: 5px;
+    padding: 8px;
+
+    outline: none;
+}
